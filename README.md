@@ -110,6 +110,14 @@ python extract_visual_textual_feature.py -nlu_dataset glue -task sst
 
 More details for pre-training the visually-supervised transformer can be found at [Vokenization](https://github.com/airsplay/vokenization).
 
+Download the BERT-based model:
+```sh
+mkdir -p CME/snap/vlm
+cd CME/snap/vlm
+wget https://nlp.cs.unc.edu/data/vokenization/vlm_12L_768H_wiki.zip
+unzip vlm_12L_768H_wiki.zip -d vlm_12L_768H_wiki
+```
+
 
 ## Imagination-Augmented NLU
 To fine-tune over glue, you can do by:
