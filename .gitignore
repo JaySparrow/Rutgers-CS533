@@ -4,3 +4,6 @@ data/nlu
 ImaGen/checkpoints
 ImaGen/taming
 CME/snap
+iACE/__pycache__
+iACE/snap
+iACE/checkpoints

@@ -121,13 +121,12 @@ unzip vlm_12L_768H_wiki.zip -d vlm_12L_768H_wiki
 
 ## Imagination-Augmented NLU
 To fine-tune over glue, you can do by:
-```sh CME
-bash scripts/run_glue_at_epoch.bash 0,1,2,3 30 bert_base 30 langvis loading bert bert-base-uncased 5 32 100
+```sh 
+cd iACE
+mkdir ./checkpoints
+python run.py
 ```
-Similary, to fine-tune over swag, you can:
-```sh CME
-bash scripts/run_swag_at_epoch.bash 0,1,2,3 30 bert_base 30 langvis loading bert bert-base-uncased 5 32 100
-```
+
 
 ## Citations
 If you find our repo useful, please cite this paper:
