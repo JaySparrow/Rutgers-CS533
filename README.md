@@ -93,11 +93,11 @@ You can generate imagination data for the GLUE and SWAG by specifying the datase
 CUDA_VISIBLE_DEVICES=0 python generate_imagination.py -rp glue_sst_train --num_texts 600 --start_idx 1 # for training dataset (first 600 text prompts)
 ```
 
-To generate one example, you can specify your text prompt as shown in the example below:
+<!-- To generate one example, you can specify your text prompt as shown in the example below:
 ```sh
 python generate_imagination.py -p "Down by the salley gardens my love and I did meet"
 ```
-<img src="./docs/images/sentence_example.png" width="256"></img>
+<img src="./docs/images/sentence_example.png" width="256"></img> -->
 
 You can then extract visual and textual features of the glue dataset by (use 'eval' option for dev split):
 
@@ -129,7 +129,7 @@ python run.py
 
 
 ## Citations
-If you find our repo useful, please cite this paper:
+This project replicates the implementation in the paper repository:
 ```bibtex
 @misc{https://doi.org/10.48550/arxiv.2204.08535,
   doi = {10.48550/ARXIV.2204.08535},

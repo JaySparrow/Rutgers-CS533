@@ -39,7 +39,7 @@ def generate_tokenized_data(tokenizer, task='sst-2', max_seq_len=126, is_eval=Fa
 
     return tokenized_data
 
-def load_data(tokenizer, task='sst-2', max_seq_len=126, is_eval=False, percentage=100):
+def load_data(tokenizer, task='sst-2', max_seq_len=126, is_eval=False, percentage=100, tokenizer_name: str=None):
     # processor = processors[task]()
     output_mode = output_modes[task]
 
@@ -47,7 +47,7 @@ def load_data(tokenizer, task='sst-2', max_seq_len=126, is_eval=False, percentag
         feature_root_path,
         "cached_{}_{}_{}_{}".format(
             "dev" if is_eval else "train",
-            tokenizer.name_or_path,
+            tokenizer.name_or_path if tokenizer_name is None else tokenizer_name,
             max_seq_len,
             task,
         ),

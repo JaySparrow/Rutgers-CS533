@@ -12,8 +12,6 @@ vq_parser = argparse.ArgumentParser(description='extract visual textual features
 vq_parser.add_argument('-task', default="sst")
 vq_parser.add_argument("-eval",  "--eval", action='store_true', help="eval", dest='eval')
 vq_parser.add_argument("-nlu_dataset",  "--nlu_dataset", type=str, default="glue")
-# vq_parser.add_argument("-extract_visual",  "--extract_visual", action='store_true', help="eval", dest='eval')
-# vq_parser.add_argument("-extract_textual",  "--extract_textual", action='store_true', help="eval", dest='eval')
 args = vq_parser.parse_args()
 visual_data_root_path = "../data/ima_gan/{}/output/".format(args.nlu_dataset)
 textual_data_root_path = "../data/nlu/{}/".format(args.nlu_dataset)
